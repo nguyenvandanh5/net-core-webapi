@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace MyWebApiApp.Data
+namespace MyWebApiApp.Data.BookContext
 {
     public class BookStroreContext : DbContext
     {
-        public BookStroreContext(DbContextOptions<BookStroreContext> opt): base(opt) 
-        { 
+        public BookStroreContext(DbContextOptions<BookStroreContext> opt) : base(opt)
+        {
 
         }
 

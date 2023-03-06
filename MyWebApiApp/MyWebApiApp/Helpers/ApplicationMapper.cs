@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using MyWebApiApp.Data;
+using MyWebApiApp.Data.BookContext;
 using MyWebApiApp.Models;
 
 namespace MyWebApiApp.Helpers

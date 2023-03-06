@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MyWebApiApp.Data
+namespace MyWebApiApp.Data.BookContext
 {
     [Table("Book")]
     public class Book
