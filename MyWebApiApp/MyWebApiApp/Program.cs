@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyWebApiApp.Data;
+using MyWebApiApp.Data.BookContext;
 using MyWebApiApp.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,11 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 builder.Services.AddDbContext<BookStroreContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("BookStore"));
+});
+
+builder.Services.AddDbContext<ProductContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Product"));
 });
 
 builder.Services.AddAutoMapper(typeof(Program));
